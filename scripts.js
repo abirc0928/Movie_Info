@@ -29,7 +29,7 @@ const showMovieDetails = (imdbID) => {
     .then((movie) => {
 
       const posterSrc = movie.Poster === "N/A"
-          ? "https://placehold.co/600x400/png"
+          ? "404.jpg"
           : movie.Poster;
 
       const movieCard = `
@@ -111,7 +111,7 @@ function showMovieInfo(movie, page = 1) {
       console.log(data);
       data.Search.forEach((movie) => {
         const posterSrc = movie.Poster === "N/A"
-          ? "https://placehold.co/600x400/png"
+          ? "404.jpg"
           : movie.Poster;
         const movieCard = `
         <div class="movie-card glass-effect  rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300" onclick="showMovieDetails('${movie.imdbID}')">
