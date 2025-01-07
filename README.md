@@ -8,7 +8,7 @@ Built a movie search app using Tailwind CSS, JavaScript, and the OMDb API, allow
 2. **Movie Details**
    <img src="screenshort\ss2.PNG" alt="" style="width:900px;"/>
 
-3. **Pagination**
+3. **Pagination on show more button**
    <img src="screenshort\ss3.PNG" alt="" style="width:900px;"/>
 
 4. **Light mood**
