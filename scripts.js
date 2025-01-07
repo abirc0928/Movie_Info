@@ -23,6 +23,7 @@ document
 const searchResults = document.querySelector("#searchResults");
 const movieInfo = document.querySelector("#movieInfo");
 const showMovieDetails = (imdbID) => {
+  console.log(imdbID)
   movieInfo.innerHTML = "";
   fetch(`http://www.omdbapi.com/?apikey=e4727508&i=${imdbID}`)
     .then((response) => response.json())
