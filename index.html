@@ -58,7 +58,7 @@
     <header class="glass-effect sticky top-0 z-50 px-6 py-4 border-b border-gray-200 dark:border-gray-800 shadow-lg">
         <div class="container mx-auto flex items-center justify-between">
 
-            <h1 class="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h1 onclick="home()" class="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent cursor-pointer">
                 MovieInfo
             </h1>
 
@@ -100,7 +100,7 @@
 
         <!-- <div id="movieInfo" class="hidden mt-8 mb-12 max-w-6xl mx-auto transform transition-all duration-500"></div> -->
         <div id="movieInfo" class=" mt-8 mb-12 max-w-6xl mx-auto transform transition-all duration-500">
-            
+
         </div>
 
         <div id="loadingIndicator" class="hidden text-center py-12">
@@ -108,23 +108,20 @@
         </div>
 
         <!-- <div id="searchResults" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-8"></div> -->
-        <div id="searchResults" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-8" onclick='showMovieDetails("tt0372784")'>
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" >
+        <div id="searchResults" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-8">
+            <div class="movie-card glass-effect  rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
-                    <!-- Movie Poster -->
                     <img src="https://m.media-amazon.com/images/M/MV5BODIyMDdhNTgtNDlmOC00MjUxLWE2NDItODA5MTdkNzY3ZTdhXkEyXkFqcGc@._V1_SX300.jpg"
-                        alt="Batman Begins"
+                        alt="The Batman"
                         class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                 </div>
                 <div class="p-4">
-                    <!-- Movie Title -->
                     <h3 class="font-semibold text-gray-900 dark:text-white line-clamp-1">Batman Begins</h3>
-                    <!-- Movie Year -->
                     <p class="text-sm text-gray-600 dark:text-gray-400">2005</p>
                 </div>
             </div>
 
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" onclick='showMovieDetails("tt1877830")'>
+            <div class="movie-card glass-effect  rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
                     <img src="https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_SX300.jpg"
                         alt="The Batman"
@@ -136,7 +133,7 @@
                 </div>
             </div>
 
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" onclick='showMovieDetails("tt2975590")'>
+            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
                     <img src="https://m.media-amazon.com/images/M/MV5BZTJkYjdmYjYtOGMyNC00ZGU1LThkY2ItYTc1OTVlMmE2YWY1XkEyXkFqcGc@._V1_SX300.jpg"
                         alt="Batman v Superman: Dawn of Justice"
@@ -149,7 +146,7 @@
                 </div>
             </div>
 
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" onclick='showMovieDetails("tt0096895")'>
+            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
                     <img src="https://m.media-amazon.com/images/M/MV5BYzZmZWViM2EtNzhlMi00NzBlLWE0MWEtZDFjMjk3YjIyNTBhXkEyXkFqcGc@._V1_SX300.jpg"
                         alt="Batman"
@@ -161,7 +158,7 @@
                 </div>
             </div>
 
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" onclick='showMovieDetails("tt0103776")'>
+            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
                     <img src="https://m.media-amazon.com/images/M/MV5BZTliMDVkYTktZDdlMS00NTAwLWJhNzYtMWIwMDZjN2ViMGFiXkEyXkFqcGc@._V1_SX300.jpg"
                         alt="Batman Returns"
@@ -173,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" onclick='showMovieDetails("tt0118688")'>
+            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
                     <img src="https://m.media-amazon.com/images/M/MV5BYzU3ZjE3M2UtM2E4Ni00MDI5LTkyZGUtOTFkMGIyYjNjZGU3XkEyXkFqcGc@._V1_SX300.jpg"
                         alt="Batman &amp; Robin"
@@ -185,7 +182,7 @@
                 </div>
             </div>
 
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" onclick='showMovieDetails("tt0112462")'>
+            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
                     <img src="https://m.media-amazon.com/images/M/MV5BMTUyNjJhZWItMTZkNS00NDc4LTllNjUtYTg3NjczMzA5ZTViXkEyXkFqcGc@._V1_SX300.jpg"
                         alt="Batman Forever"
@@ -197,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" onclick='showMovieDetails("tt4116284")'>
+            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
                     <img src="https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg"
                         alt="The Lego Batman Movie"
@@ -209,7 +206,7 @@
                 </div>
             </div>
 
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" onclick='showMovieDetails("tt0103359")'>
+            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
                     <img src="https://m.media-amazon.com/images/M/MV5BYjgwZWUzMzUtYTFkNi00MzM0LWFkMWUtMDViMjMxNGIxNDUxXkEyXkFqcGc@._V1_SX300.jpg"
                         alt="Batman: The Animated Series"
@@ -222,7 +219,7 @@
                 </div>
             </div>
 
-            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl" onclick='showMovieDetails("tt18689424")'>
+            <div class="movie-card glass-effect rounded-xl overflow-hidden cursor-pointer hover:shadow-xl bg-gray-300">
                 <div class="aspect-[2/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
                     <img src="https://m.media-amazon.com/images/M/MV5BOTRlNWQwM2ItNjkyZC00MGI3LThkYjktZmE5N2FlMzcyNTIyXkEyXkFqcGdeQXVyMTEyNzgwMDUw._V1_SX300.jpg"
                         alt="Batman v Superman: Dawn of Justice (Ultimate Edition)"
@@ -235,14 +232,17 @@
                 </div>
             </div>
         </div>
+        <div class="flex justify-center mt-8">
+            <button id="searchButton" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Show more</button>
         </div>
+       
     </main>
 
     <footer class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-white p-6 mt-12 transition-colors duration-300">
         <div class="container mx-auto text-center">
             <p class="text-gray-400">
                 All rights reserved<br>
-                Crafted By <a href="https://zayedabdullah.com">Abir Chowdhury</a> &copy; 2024
+                Crafted By <a href="https://zayedabdullah.com">Zayed</a> &copy; 2024
             </p>
         </div>
     </footer>
