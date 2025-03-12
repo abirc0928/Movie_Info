@@ -25,7 +25,7 @@ const movieInfo = document.querySelector("#movieInfo");
 const showMovieDetails = (imdbID) => {
   console.log(imdbID)
   movieInfo.innerHTML = "";
-  fetch(`http://www.omdbapi.com/?apikey=e4727508&i=${imdbID}`)
+  fetch(`//www.omdbapi.com/?apikey=e4727508&i=${imdbID}`)
     .then((response) => response.json())
     .then((movie) => {
 
@@ -106,7 +106,7 @@ const showMovieDetails = (imdbID) => {
 };
 
 function showMovieInfo(movie, page = 1) {
-  fetch(`http://www.omdbapi.com/?apikey=e4727508&s=${movie}&page=${page}`)
+  fetch(`//www.omdbapi.com/?apikey=e4727508&s=${movie}&page=${page}`)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
